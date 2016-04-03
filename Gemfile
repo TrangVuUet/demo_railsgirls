@@ -14,6 +14,11 @@ group :production do
 end
 # upload image
 gem 'carrierwave'
+# autho
+gem 'devise'
+gem "cloudinary"
+#resize image
+gem 'mini_magick', '3.8.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -52,5 +57,9 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  
+  #Login FB
+  gem 'omniauth'
+  gem 'omniauth-facebook', '1.4.0'
 end
 

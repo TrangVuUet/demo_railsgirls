@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: trangvuuet
+  api_key: '194828882519691'
+  api_secret: rXu4moOdFfP73ppbJNJyRmugigs
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: trangvuuet
+  api_key: '194828882519691'
+  api_secret: rXu4moOdFfP73ppbJNJyRmugigs
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: trangvuuet
+  api_key: '194828882519691'
+  api_secret: rXu4moOdFfP73ppbJNJyRmugigs
+  enhance_image_tag: true
+  static_image_support: false

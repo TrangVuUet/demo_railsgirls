@@ -2,12 +2,13 @@
 
 <h1>Listing Comments</h1>
 
-<table>
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>User name</th>
       <th>Body</th>
       <th>Idea</th>
+      <th>Image of Comment</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +19,7 @@
         <td><%= comment.user_name %></td>
         <td><%= comment.body %></td>
         <td><%= comment.idea_id %></td>
+        <td><%= image_tag(comment.picture_url, width: 100) if comment.picture.present? %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
         <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

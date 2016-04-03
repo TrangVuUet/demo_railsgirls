@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :comments
   get 'pages/info'
 
   root :to => redirect('/ideas')
   resources :ideas
+  
+  resource :user, only: [:edit, :update]
   
   #get "trang" => "ideas#index"
   # The priority is based upon order of creation: first created -> highest priority.
